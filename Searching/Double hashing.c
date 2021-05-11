@@ -26,7 +26,6 @@ typedef struct _slot{
 int HashInsert(int key, HashSlot hashTable[]);
 int HashDelete(int key, HashSlot hashTable[]);
 
-
 int hash1(int key);
 int hash2(int key);
 
@@ -40,7 +39,8 @@ int main()
     int comparison;
     HashSlot hashTable[TABLESIZE];
 
-    for(i=0;i<TABLESIZE;i++){
+    for(i=0;i<TABLESIZE;i++)
+    {
         hashTable[i].indicator = EMPTY;
         hashTable[i].key = 0;
     }
