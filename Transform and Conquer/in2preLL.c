@@ -46,7 +46,6 @@ int deleteNode(LinkedList *llPtr);
 void removeAllNodes(LinkedList *llPtr);
 int isEmptyLinkedList (LinkedList ll);
 
-
 void in2PreLL(char* infix, LinkedList *inExpLL);
 
 void printExpLL(LinkedList inExpLL);
@@ -184,7 +183,6 @@ void in2PreLL(char* infix, LinkedList *inExpLL)
     
     if (placevalue != 1)              //for 1st element of string
         insertNode(inExpLL, number, OPERAND);
-
 }
 
 //////////////////////////////////////////////////////////////////////////////////
