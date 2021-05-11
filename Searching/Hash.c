@@ -61,7 +61,8 @@ int main()
 
     printf("Enter selection: ");
     scanf("%d",&opt);
-    while(opt>=1 && opt <=5){
+    while(opt>=1 && opt <=5)
+    {
         switch(opt){
         case 1:
             printf("Enter number of data to be inserted:\n");
@@ -157,8 +158,7 @@ int HashInsert(HashTable* Q1Ptr, int key)
     Q1Ptr->Table[slot].size++;
     Q1Ptr->nSize++;
 
-    return 1;
-    
+    return 1;  
 }
 
 int HashDelete(HashTable* Q1Ptr, int key)
