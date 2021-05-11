@@ -75,12 +75,14 @@ int main()
     {
         i=i-1;
 
-        if(g.list[i]==NULL){
+        if(g.list[i]==NULL)
+        {
             g.list[i] = (ListNode *)malloc(sizeof(ListNode));
             g.list[i]->vertex = j;
             g.list[i]->next = NULL;
         }
-        else{
+        else
+        {
             temp = (ListNode *)malloc(sizeof(ListNode));
             temp->next = g.list[i];
             temp->vertex = j;
